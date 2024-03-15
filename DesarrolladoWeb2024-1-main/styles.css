@@ -27,3 +27,24 @@ span ul li {
     box-shadow: 5px 5px 5px #888888;
 
 }
+
+#boton{
+    background-color: #4f2e7e;
+    border: none;
+    font-size: 30px;
+    width: 500px;
+    padding: 20px;
+    color: #888888;
+}
+
+.texto{
+    color: #2c060c;
+}
+
+link{
+    color: rgb(141, 79, 99);
+}
+
+a:hover{
+    color: #4f2e7e;
+}
