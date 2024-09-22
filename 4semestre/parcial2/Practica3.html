@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción al bootstrap</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+    <script src="/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+        <div class="row">
+            <h3>Componente acordion</h3>
+            <div class="accordion">
+                <div class="col">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"
+                                id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion
+                                        body.</strong> It is shown by default,
+                                    until the collapse plugin adds the
+                                    appropriate classes that we use to style
+                                    each element. These classes control the
+                                    overall appearance, as well as the showing
+                                    and hiding via CSS transitions. You can
+                                    modify any of this with custom CSS or
+                                    overriding our default variables. It's also
+                                    worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"
+                                id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed"
+                                    type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion
+                                        body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the
+                                    appropriate classes that we use to style
+                                    each element. These classes control the
+                                    overall appearance, as well as the showing
+                                    and hiding via CSS transitions. You can
+                                    modify any of this with custom CSS or
+                                    overriding our default variables. It's also
+                                    worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"
+                                id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed"
+                                    type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion
+                                        body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the
+                                    appropriate classes that we use to style
+                                    each element. These classes control the
+                                    overall appearance, as well as the showing
+                                    and hiding via CSS transitions. You can
+                                    modify any of this with custom CSS or
+                                    overriding our default variables. It's also
+                                    worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <h3>Alerts</h3>
+            <div class="col">
+                <div class="alert alert-primary" role="alert">
+                    A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.              
+                </div>
+                <div class="alert alert-success" role="alert">
+                    A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.            
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.             
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like. 
+                </div>
+                <div class="alert alert-info" role="alert">
+                    A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.      
+                </div>
+                <div class="alert alert-light" role="alert">
+                    A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.      
+                </div>
+                <div class="alert alert-dark" role="alert">
+                    A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+     
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <h3>Badges</h3>
+            <div class="col">
+                <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+                <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+                <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+                <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+                <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+                <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Breadcrumb</h3>
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active"
+                            aria-current="page">Home</li>
+                    </ol>
+                </nav>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active"
+                            aria-current="page">Library</li>
+                    </ol>
+                </nav>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active"
+                            aria-current="page">Data</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Buttons</h3>
+            <div class="col">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Button group</h3>
+            <div class="col">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary">Left</button>
+                    <button type="button" class="btn btn-primary">Middle</button>
+                    <button type="button" class="btn btn-primary">Right</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Cards</h3>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="/DesarrolladoWeb2024-1-main/parcial2/batman (1).jpeg" class="card-img-top" alt="..."> 
+                    <div class="card-body">
+                        <h5 class="card-title">Yo</h5>
+                        <p class="card-text">Lopez Quiroz Perla Daniela</p>
+                        <a href="/index.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/bootstrap.js"></script>
+    </body>
+</html>
