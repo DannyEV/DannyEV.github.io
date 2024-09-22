@@ -1,0 +1,50 @@
+.parrafo{
+    border: 1px solid pink;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    color: rgb(75, 21, 9);
+    font-size: larger;
+    font-weight: 500;
+}
+div{
+    border: 2px solid rgb(136, 29, 58);
+    color: brown;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span ul li {
+    list-style-type: none;
+    text-align: left;
+    margin: auto;
+    color: #4f2e7e;
+    font-size: medium;
+    font-weight: 500;
+    padding: 13px;
+    width: 50%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #888888;
+
+}
+
+#boton{
+    background-color: #4f2e7e;
+    border: none;
+    font-size: 30px;
+    width: 500px;
+    padding: 20px;
+    color: #888888;
+}
+
+.texto{
+    color: #2c060c;
+}
+
+link{
+    color: rgb(141, 79, 99);
+}
+
+a:hover{
+    color: #4f2e7e;
+}
