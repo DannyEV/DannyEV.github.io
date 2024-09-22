@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica #1: Envío de datos con PHP</title>
+</head>
+
+<body>
+    <h1>Envío de datos con PHP</h1>
+    <form action="practica1.php" method="GET">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" min="1" required><br><br>
+
+        <label for="escuela">Escuela:</label>
+        <select name="escuela" id="escuela" required>
+            <option value="">Selecciona una escuela</option>
+            <option value="Cetis107">Prepa Cetis 107</option>
+            <option value="Cobaes">Escuela Cobaes</option>
+        </select><br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" name="correo" id="correo" required><br><br>
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required><br><br>
+
+        <input type="submit" value="Enviar datos">
+    </form>
+</body>
+
+</html>

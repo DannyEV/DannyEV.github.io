@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en línea</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+    <style>
+        .bg-pink {
+            background-color: #ff6ebf !important;
+            color: white !important;
+        }
+
+        .btn-pink {
+            background-color: #ff6ebf;
+            border-color: #ff6ebf;
+            color: white;
+        }
+
+        .btn-pink:hover {
+            background-color: #f5a2b0;
+            border-color: #f5a2b0;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <form action="practica4.php" method="POST">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h1 class="text-center mb-4">Examen de Kirby</h1>
+                    <hr>
+
+                    <!-- Pregunta 1 -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-pink">
+                            1. ¿Cuántos colores principales de Kirby hay?
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta1" value="3" required>
+                                <label class="form-check-label">3</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta1" value="6" required>
+                                <label class="form-check-label">6</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta1" value="20" required>
+                                <label class="form-check-label">20</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="card shadow-sm p-4 mb-4">
+                        <p class="mb-0">
+                            2. <input class="form-control d-inline w-50" type="text" name="pregunta2" required> tiene un
+                            agujero negro en vez de estómago.
+                        </p>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-pink">
+                            3. ¿Cuáles son villanos en Kirby? (Selecciona 2)
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="pregunta3[]" value="Rey Dee Dee">
+                                <label class="form-check-label">Rey Dee Dee</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="pregunta3[]" value="Donkey Kong">
+                                <label class="form-check-label">Donkey Kong</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="pregunta3[]" value="Meta Knight">
+                                <label class="form-check-label">Meta Knight</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-pink">
+                            4. ¿En qué año salió el primer Kirby?
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta4" value="1992" required>
+                                <label class="form-check-label">1992</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta4" value="1892" required>
+                                <label class="form-check-label">1892</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta4" value="1592" required>
+                                <label class="form-check-label">1592</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="card shadow-sm p-4 mb-4">
+                        <p class="mb-0">
+                            5. <input class="form-control d-inline w-50" type="text" name="pregunta5" required> es un
+                            rey pingüino.
+                        </p>
+                    </div>
+
+                    <!-- Pregunta 6 -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-pink">
+                            6. ¿De qué color son los ojos de Kirby?
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta6" value="Rosas" required>
+                                <label class="form-check-label">Rosas</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta6" value="Amarillo" required>
+                                <label class="form-check-label">Amarillo</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta6" value="Azul" required>
+                                <label class="form-check-label">Azul</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 7 -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-pink">
+                            7. ¿Quién creó a Kirby?
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta7" value="Elon Mosca"
+                                    required>
+                                <label class="form-check-label">Elon Mosca</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta7" value="Masahiro Sakurai"
+                                    required>
+                                <label class="form-check-label">Masahiro Sakurai</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta7" value="Fujimoto" required>
+                                <label class="form-check-label">Fujimoto</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 8 -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-pink">
+                            8. ¿Cómo hace Kirby?
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta8" value="Ponyo" required>
+                                <label class="form-check-label">Ponyo</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta8" value="Poyo" required>
+                                <label class="form-check-label">Poyo</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta8"
+                                    value="Ya te la sabes, cartera y celular" required>
+                                <label class="form-check-label">Ya te la sabes, cartera y celular</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 9 -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-pink">
+                            9. ¿De qué color son los zapatos de Kirby?
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta9" value="Rosas" required>
+                                <label class="form-check-label">Rosas</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta9" value="Rojos" required>
+                                <label class="form-check-label">Rojos</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta9" value="No usa" required>
+                                <label class="form-check-label">No usa</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 10 -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-pink">
+                            10. ¿Por qué es "Kirby"?
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta10"
+                                    value="Porque traga mucho" required>
+                                <label class="form-check-label">Porque traga mucho</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta10"
+                                    value="Porque es una bola rosa" required>
+                                <label class="form-check-label">Porque es una bola rosa</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pregunta10" value="Por John Kirby"
+                                    required>
+                                <label class="form-check-label">Por John Kirby</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-pink btn-lg" value="Terminar examen">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+    <style>
+        table tr td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Registro de calificaciones</h1><hr>
+    <form action="practica2.php" method="POST">
+        <label for="">Nombre del Alumno:</label>
+        <input type="text" name="nombre" value="LOPEZ QUIROZ PERLA DANIELA">&nbsp;
+
+        <label for="">Fecha:</label>
+        <input type="date" name="fecha">&nbsp;
+
+        <label for="">Num. Control</label>
+        <input type="text" value="22325061070317" name="num_control">&nbsp;
+
+        <h2>Captura las calificaciones</h2>
+        <table border="1">
+            <tr>
+                <td>Materia</td>
+                <td>Calificación</td>
+                <td>Maestro</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="materias[]" value="Física"></td>
+                <td><input type="number" name="calificaciones[]" value="9"></td>
+                <td><input type="text" name="maestros[]" value="Marisela García Alvarez"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="materias[]" value="Desarrolla aplicaciones web con conexión a BD"></td>
+                <td><input type="number" name="calificaciones[]" value="9"></td>
+                <td><input type="text" name="maestros[]" value="Jorge Ibarra"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="materias[]" value="Cálculo integral"></td>
+                <td><input type="number" name="calificaciones[]" value="8.5"></td>
+                <td><input type="text" name="maestros[]" value="Ulises Gallardo"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="materias[]" value="Inglés"></td>
+                <td><input type="number" name="calificaciones[]" value="9"></td>
+                <td><input type="text" name="maestros[]" value="David Franco"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="materias[]" value="CSyV"></td>
+                <td><input type="number" name="calificaciones[]" value="10"></td>
+                <td><input type="text" name="maestros[]" value="Lourdes Zuñiga"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="materias[]" value="Construye base de datos para aplicaciones Web"></td>
+                <td><input type="number" name="calificaciones[]" value="9"></td>
+                <td><input type="text" name="maestros[]" value="Luis Santillan"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Imprimir boleta">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
