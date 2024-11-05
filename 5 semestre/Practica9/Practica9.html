@@ -17,23 +17,30 @@
 
 <body>
   <h1>La Loteria</h1>
-  <div id="carta_activa"></div>
-  <button id="dar_carta">Botón</button>
+<div class="container">
+            <h1 class="text-center">La lotería Mexicana<br><button
+                    id="dar_carta" class="btn btn-primary">Dar
+                    carta</button></h1><hr>
+            <div id="carta_activa" class="text-center"></div><br>
+        </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6" class="card">
-        <div class="row" id="carta1">
+        <div class="container px-4">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-2 border bg-light row" id="carta1">
+                        <span id="n_carta"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-2 border bg-light row" id="carta2">
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
-      </div>
-      <div class="col-sm-6" class="card">
-        <div class="row" id="carta2">
-
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 
 </html>
